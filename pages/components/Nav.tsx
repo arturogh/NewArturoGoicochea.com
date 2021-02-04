@@ -5,7 +5,8 @@ export function Nav() {
   return (
     <nav>
       <SiteTitle siteTitle="Arturo" />
-      <NavItem href="About" text="About" />
+      <NavItem href="/About" text="About" />
+      <NavItem href="/" text="Home" />
     </nav>
   );
 }
@@ -18,8 +19,7 @@ interface INavItem {
 function NavItem(props: INavItem) {
   const router = useRouter();
   const style = {
-    marginRight: 10,
-    color: router.pathname === props.href ? "red" : "black",
+    color: router.pathname === props.href ? "red" : "white",
   };
 
   const handleClick = (e) => {

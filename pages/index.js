@@ -1,10 +1,9 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import { Nav } from "./components";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-800 dark:text-white">
       <Nav />
     </div>
   );
